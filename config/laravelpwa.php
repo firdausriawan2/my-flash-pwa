@@ -5,12 +5,18 @@ return [
     'manifest' => [
         'name' => env('APP_NAME', 'MyFlash'),
         'short_name' => 'MyFlash',
+        'description' => 'Your Internet Solution',
         'start_url' => '/',
+        "scope" => "/",
+        'dir' => 'auto',
+        'lang' => 'id',
+        'categories' => ['social'],
+        'display' => 'fullscreen',
+        'orientation'=> 'portrait',
         'background_color' => '#ffffff',
         'theme_color' => '#000000',
-        'display' => 'standalone',
-        'orientation'=> 'portrait',
-        'status_bar'=> 'black',
+        // 'status_bar'=> 'black',
+        "generated" => "true",
         'icons' => [
             '72x72' => [
                 'path' => '/images/icons/icon-72x72.png',
@@ -74,10 +80,6 @@ return [
             // ]
         ],
         'custom' => [
-            'description' => 'Your Internet Solution',
-            'dir' => 'auto',
-            'lang' => 'id',
-            'categories' => ['social', 'payment'],
             'screenshots' => [
                 [
                     'src' => '/images/screenshots/screenshot 1.png',

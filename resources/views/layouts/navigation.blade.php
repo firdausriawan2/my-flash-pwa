@@ -5,8 +5,8 @@
         </a>
     </div> --}}
     <div class="left pageTitle">
-        {{-- <img src="assets/img/logo.png" alt="logo" class="logo"> --}}
-        <h2 class="logo text-light py-1">MyFlash</h2>
+        <img src="assets/img/logo.png" alt="logo" class="logo">
+        {{-- <h2 class="logo text-light py-1">MyFlash</h2> --}}
     </div>
     <div class="right">
         <a href="app-notifications.html" class="headerButton">

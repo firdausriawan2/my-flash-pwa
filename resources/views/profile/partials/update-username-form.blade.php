@@ -11,7 +11,7 @@
                         @csrf
                         @method('PATCH')
                         <div class="form-group basic">
-                            <label class="label">Name</label>
+                            <label class="label" for="name">Name</label>
                             <div class="input-group">
                                 <input id="name" name="name" type="text"
                                     class="form-control @error('name') is-invalid @enderror"

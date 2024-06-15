@@ -14,7 +14,7 @@
                 <div class="card-body pb-1">
                     <div class="form-group basic">
                         <div class="input-wrapper">
-                            <label class="label" for="email1">E-mail</label>
+                            <label class="label" for="email">E-mail</label>
                             <input id="email" class="form-control @error('email') is-invalid @enderror"
                                 type="email" name="email" value="{{ old('email') }}" placeholder="Your e-mail"
                                 required autofocus autocomplete="username">

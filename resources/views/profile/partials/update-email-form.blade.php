@@ -6,12 +6,11 @@
             </div>
             <div class="modal-body">
                 <div class="action-sheet-content">
-
                     <form method="POST" action="{{ route('profile.update') }}">
                         @csrf
                         @method('PATCH')
                         <div class="form-group basic">
-                            <label class="label">Email</label>
+                            <label class="label" for="email">Email</label>
                             <div class="input-group">
                                 <input id="email" name="email" type="email"
                                     class="form-control @error('email') is-invalid @enderror"

@@ -15,7 +15,8 @@
     <link rel="icon" type="image/png" href="assets/img/favicon.png" sizes="32x32">
     <link rel="apple-touch-icon" sizes="180x180" href="assets/img/icon/192x192.png">
     <link rel="stylesheet" href="assets/css/style.css">
-    @laravelPWA
+    <link rel="manifest" href="__manifest.json">
+
 </head>
 
 <body>

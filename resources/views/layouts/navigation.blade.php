@@ -13,8 +13,8 @@
             <ion-icon class="icon" name="notifications-outline"></ion-icon>
             <span class="badge badge-danger">0</span>
         </a>
-        <a href="app-settings.html" class="headerButton">
-            <img src="assets/img/sample/avatar/avatar1.jpg" alt="image" class="imaged w32">
+        <a href="{{ route('account') }}" class="headerButton">
+            <img src="https://ntrepidcorp.com/wp-content/uploads/2016/06/team-1.jpg" alt="image" class="imaged w32">
         </a>
     </div>
 </div>

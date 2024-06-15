@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AccountController;
 use App\Http\Controllers\BillController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ProfileController;
@@ -9,9 +10,11 @@ use Illuminate\Support\Facades\Route;
 //     return view('welcome');
 // });
 
-Route::get('/', [HomeController::class, 'index'])->name('home');
-Route::get('/bill', [BillController::class, 'index'])->name('bill');
-
+Route::middleware('auth')->group(function () {
+    Route::get('/', [HomeController::class, 'index'])->name('home');
+    Route::get('/bill', [BillController::class, 'index'])->name('bill');
+    Route::get('/account', [AccountController::class, 'index'])->name('account');
+});
 
 Route::get('/dashboard', function () {
     return view('dashboard');

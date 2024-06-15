@@ -5,12 +5,12 @@
             <!-- Balance -->
             <div class="balance">
                 <div class="left">
-                    <span class="title">M.Firdaus Riawan</span>
+                    <span class="title">{{ Auth::user()->name }}</span>
                     <h2 class="total">2020791423</h2>
                 </div>
                 <div class="right">
-                    <a href="#" class="button" data-bs-toggle="modal" data-bs-target="#depositActionSheet">
-                        <ion-icon name="add-outline"></ion-icon>
+                    <a href="#" class="button">
+                        Lunas
                     </a>
                 </div>
             </div>
@@ -247,4 +247,40 @@
     </div>
     <!-- * Penawaran Terbaik -->
 
+    <x-slot name="style">
+        <style>
+            .wallet-card .balance .right .button {
+                width: 100px;
+                height: 64px;
+                font-size: 20px;
+            }
+
+            .wallet-card .balance .total {
+                font-size: 25px;
+            }
+        </style>
+    </x-slot>
+    <x-slot name="script">
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                new Splide('#autoCarousel', {
+                    type: 'loop',
+                    autoplay: true,
+                    interval: 3000, // Change slide every 3 seconds
+                    gap: 16,
+                    padding: 16,
+                    arrows: false,
+                    pagination: false,
+                }).mount();
+            });
+
+            new Splide('#offerCarousel', {
+                type: 'loop',
+                autoplay: true,
+                interval: 3000, // Change slide every 3 seconds
+                arrows: false,
+                pagination: false,
+            }).mount();
+        </script>
+    </x-slot>
 </x-app-layout>

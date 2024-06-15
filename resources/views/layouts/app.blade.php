@@ -16,6 +16,9 @@
     <link rel="apple-touch-icon" sizes="180x180" href="assets/img/icon/192x192.png">
     <link rel="stylesheet" href="assets/css/style.css">
     @laravelPWA
+    @if (isset($style))
+        {{ $style }}
+    @endif
 </head>
 
 <body>
@@ -71,13 +74,15 @@
         </a>
         <!-- * Button Support -->
 
-        <!-- Button Support -->
-        <a href="app-settings.html" class="item">
+        <!-- Button Account -->
+        @php $isAccount = Route::currentRouteName() == 'account'; @endphp
+        <a href="{{ $isAccount ? '#' : route('account') }}" class="item {{ $isAccount ? 'active' : '' }}"
+            class="item">
             <div class="col">
-                <ion-icon name="chatbubble-outline"></ion-icon>
+                <ion-icon name="person-outline"></ion-icon>
             </div>
         </a>
-        <!-- * Button Support -->
+        <!-- * Button Account -->
     </div>
     <!-- * App Bottom Menu -->
 
@@ -180,28 +185,9 @@
         AddtoHome("2000", "once");
     </script>
 
-
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            new Splide('#autoCarousel', {
-                type: 'loop',
-                autoplay: true,
-                interval: 3000, // Change slide every 3 seconds
-                gap: 16,
-                padding: 16,
-                arrows: false,
-                pagination: false,
-            }).mount();
-        });
-
-        new Splide('#offerCarousel', {
-            type: 'loop',
-            autoplay: true,
-            interval: 3000, // Change slide every 3 seconds
-            arrows: false,
-            pagination: false,
-        }).mount();
-    </script>
+    @if (isset($script))
+        {{ $script }}
+    @endif
 </body>
 
 </html>

@@ -12,7 +12,7 @@
 //-----------------------------------------------------------------------
 const Finapp = {
     //-------------------------------------------------------------------
-    // // PWA Settings
+    // PWA Settings
     // PWA: {
     //     enable: true, // Enable or disable PWA
     // },
@@ -64,13 +64,13 @@ var loader = document.getElementById('loader');
 //-----------------------------------------------------------------------
 // Service Workers
 //-----------------------------------------------------------------------
-if (Finapp.PWA.enable) {
-    if ('serviceWorker' in navigator) {
-        navigator.serviceWorker.register('__service-worker.js')
-            .then(reg => console.log('service worker registered'))
-            .catch(err => console.log('service worker not registered - there is an error.', err));
-    }
-}
+// if (Finapp.PWA.enable) {
+//     if ('serviceWorker' in navigator) {
+//         navigator.serviceWorker.register('__service-worker.js')
+//             .then(reg => console.log('service worker registered'))
+//             .catch(err => console.log('service worker not registered - there is an error.', err));
+//     }
+// }
 //-----------------------------------------------------------------------
 
 
@@ -624,7 +624,7 @@ function testMode() {
     }
 
     testModeSubtitle("THEME SETTINGS")
-    testModeMsg(Finapp.PWA.enable, "PWA")
+    // testModeMsg(Finapp.PWA.enable, "PWA")
     testModeMsg(Finapp.Dark_Mode.default, "Set dark mode as default theme")
     testModeMsg(Finapp.Dark_Mode.local_mode.enable, "Local dark mode (between " + Finapp.Dark_Mode.local_mode.start_time + ":00 and " + Finapp.Dark_Mode.local_mode.end_time + ":00)")
     testModeMsg(Finapp.Dark_Mode.auto_detect.enable, "Auto detect dark mode")

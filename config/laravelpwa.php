@@ -93,6 +93,9 @@ return [
                     'platform' => 'wide',
                 ]
             ],
+            'launch_handler' => [
+                'client_mode' => 'navigate-existing'
+            ]
         ]
     ]
 ];

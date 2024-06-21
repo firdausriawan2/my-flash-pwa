@@ -69,11 +69,16 @@ return [
             ],
         ],
         'custom' => [
+            'id' => '/',
             'description' => 'Your Internet Solution',
             'scope' => '/',
-            'dir' => 'auto',
+            'dir' => 'ltr',
             'lang' => 'id',
             'categories' => ['social'],
+            'prefer_related_applications' => false,
+            "display_override" => [
+                "window-controls-overlay"
+            ],
             'screenshots' => [
                 [
                     'src' => '/assets/img/screenshots/screenshot 1.png',

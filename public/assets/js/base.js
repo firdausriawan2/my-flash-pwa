@@ -12,10 +12,10 @@
 //-----------------------------------------------------------------------
 const Finapp = {
     //-------------------------------------------------------------------
-    // PWA Settings
-    PWA: {
-        enable: true, // Enable or disable PWA
-    },
+    // // PWA Settings
+    // PWA: {
+    //     enable: true, // Enable or disable PWA
+    // },
     //-------------------------------------------------------------------
     // Dark Mode Settings
     Dark_Mode: {

@@ -2,102 +2,130 @@
     "name": "MyFlash",
     "short_name": "MyFlash",
     "description": "Your Internet Solution",
-    "background_color": "#ffffff",
-    "theme_color": "#000000",
     "start_url": "/",
-    "dir": "auto",
     "scope": "/",
+    "dir": "auto",
     "lang": "id",
-    "orientation": "portrait",
-    "display": "fullscreen",
     "categories": [
-        "entertainment",
         "social"
     ],
+    "display": "standalone",
+    "orientation": "portrait",
+    "background_color": "#ffffff",
+    "theme_color": "#000000",
     "generated": "true",
     "icons": [
         {
-            "src": "assets/img/icon/72x72.png",
-            "type": "image/png",
+            "src": "/images/icons/icon-72x72.png",
             "sizes": "72x72",
+            "type": "image/png",
             "purpose": "any"
         },
         {
-            "src": "assets/img/icon/96x96.png",
-            "type": "image/png",
+            "src": "/images/icons/icon-96x96.png",
             "sizes": "96x96",
+            "type": "image/png",
             "purpose": "any"
         },
         {
-            "src": "assets/img/icon/128x128.png",
-            "type": "image/png",
+            "src": "/images/icons/icon-128x128.png",
             "sizes": "128x128",
+            "type": "image/png",
             "purpose": "any"
         },
         {
-            "src": "assets/img/icon/144x144.png",
-            "type": "image/png",
+            "src": "/assets/img/icon/144x144.png",
             "sizes": "144x144",
+            "type": "image/png",
             "purpose": "any"
         },
         {
-            "src": "assets/img/icon/152x152.png",
-            "type": "image/png",
+            "src": "/assets/img/icon/152x152.png",
             "sizes": "152x152",
-            "purpose": "maskable"
+            "type": "image/png",
+            "purpose": "any"
         },
         {
-            "src": "assets/img/icon/192x192.png",
-            "type": "image/png",
+            "src": "/assets/img/icon/192x192.png",
             "sizes": "192x192",
+            "type": "image/png",
             "purpose": "any"
         },
         {
-            "src": "assets/img/icon/384x384.png",
-            "type": "image/png",
+            "src": "/assets/img/icon/384x384.png",
             "sizes": "384x384",
+            "type": "image/png",
             "purpose": "any"
         },
         {
-            "src": "assets/img/icon/512x512.png",
-            "type": "image/png",
+            "src": "/assets/img/icon/512x512.png",
             "sizes": "512x512",
+            "type": "image/png",
             "purpose": "any"
         }
     ],
-    "splash": [
+    "splash_screens": [
         {
-            "640x1136": "assets/img/splash/640x1136.png",
-            "750x1334": "assets/img/splash/750x1334.png",
-            "828x1792": "assets/img/splash/828x1804.png",
-            "1125x2436": "assets/img/splash/1125x2436.png",
-            "1242x2208": "assets/img/splash/1242x2208.png",
-            "1242x2688": "assets/img/splash/1242x2688.png",
-            "1536x2048": "assets/img/splash/1536x2048.png",
-            "1668x2224": "assets/img/splash/1668x2224.png",
-            "1668x2388": "assets/img/splash/1668x2388.png",
-            "2048x2732": "assets/img/splash/2048x2732.png"
+            "src": "/assets/img/splash/640x1136.png",
+            "sizes": "640x1136",
+            "type": "image/png"
+        },
+        {
+            "src": "/assets/img/splash/750x1334.png",
+            "sizes": "750x1334",
+            "type": "image/png"
+        },
+        {
+            "src": "/assets/img/splash/828x1792.png",
+            "sizes": "828x1792",
+            "type": "image/png"
+        },
+        {
+            "src": "/assets/img/splash/1125x2436.png",
+            "sizes": "1125x2436",
+            "type": "image/png"
+        },
+        {
+            "src": "/assets/img/splash/1242x2208.png",
+            "sizes": "1242x2208",
+            "type": "image/png"
+        },
+        {
+            "src": "/assets/img/splash/1242x2688.png",
+            "sizes": "1242x2688",
+            "type": "image/png"
+        },
+        {
+            "src": "/assets/img/splash/1536x2048.png",
+            "sizes": "1536x2048",
+            "type": "image/png"
+        },
+        {
+            "src": "/assets/img/splash/1668x2224.png",
+            "sizes": "1668x2224",
+            "type": "image/png"
+        },
+        {
+            "src": "/assets/img/splash/16668x2388.png",
+            "sizes": "1668x2388",
+            "type": "image/png"
+        },
+        {
+            "src": "/assets/img/splash/2048x2732.png",
+            "sizes": "2048x2732",
+            "type": "image/png"
         }
     ],
     "shortcuts": [
         {
-            "name": "Login",
-            "url": "/login",
+            "name": "Shortcut Link 1",
+            "description": "Shortcut Link 1 Description",
+            "url": "/shortcutlink1",
             "icons": [
                 {
-                    "src": "assets/img/icon/96x96.png",
-                    "sizes": "96x96",
-                    "purpose": "any"
-                }
-            ]
-        },
-        {
-            "name": "Home",
-            "url": "/",
-            "icons": [
-                {
-                    "src": "assets/img/icon/96x96.png",
-                    "sizes": "96x96",
+                    "src": "/assets/img/icon/72x72.png",
+                    "sizes": "72x72",
+                    "type": "image/png",
                     "purpose": "any"
                 }
             ]
@@ -105,17 +133,16 @@
     ],
     "screenshots": [
         {
-            "src": "assets/img/screenshots/screenshot 1.png",
+            "src": "/assets/img/screenshots/screenshot 1.png",
             "sizes": "1280x800",
             "type": "image/png",
-            "platform": "wide",
-            "form_factor": "wide"
+            "platform": "wide"
         },
         {
-            "src": "assets/img/screenshots/screenshot 2.png",
+            "src": "/assets/img/screenshots/screenshot 2.png",
             "sizes": "750x1334",
             "type": "image/png",
-            "platform": "narrow"
+            "platform": "wide"
         }
     ]
 }

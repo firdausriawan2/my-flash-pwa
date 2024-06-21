@@ -10,8 +10,8 @@ return [
         "scope" => "/",
         'dir' => 'auto',
         'lang' => 'id',
-        'categories' => ['entertainment', 'social'],
-        'display' => 'standalone',
+        'categories' => ['social'],
+        'display' => 'fullscreen',
         'orientation'=> 'portrait',
         'background_color' => '#ffffff',
         'theme_color' => '#000000',
@@ -19,35 +19,35 @@ return [
         "generated" => "true",
         'icons' => [
             '72x72' => [
-                'path' => 'assets/img/icon/72x72.png',
+                'path' => '/images/icons/icon-72x72.png',
                 'purpose' => 'any'
             ],
             '96x96' => [
-                'path' => 'assets/img/icon/96x96.png',
+                'path' => '/images/icons/icon-96x96.png',
                 'purpose' => 'any'
             ],
             '128x128' => [
-                'path' => 'assets/img/icon/128x128.png',
+                'path' => '/images/icons/icon-128x128.png',
                 'purpose' => 'any'
             ],
             '144x144' => [
-                'path' => 'assets/img/icon/144x144.png',
+                'path' => '/assets/img/icon/144x144.png',
                 'purpose' => 'any'
             ],
             '152x152' => [
-                'path' => 'assets/img/icon/152x152.png',
-                'purpose' => 'maskable'
+                'path' => '/images/icons/icon-152x152.png',
+                'purpose' => 'any'
             ],
             '192x192' => [
-                'path' => 'assets/img/icon/192x192.png',
+                'path' => '/images/icons/icon-192x192.png',
                 'purpose' => 'any'
             ],
             '384x384' => [
-                'path' => 'assets/img/icon/384x384.png',
+                'path' => '/images/icons/icon-384x384.png',
                 'purpose' => 'any'
             ],
             '512x512' => [
-                'path' => 'assets/img/icon/512x512.png',
+                'path' => '/images/icons/icon-512x512.png',
                 'purpose' => 'any'
             ],
         ],
@@ -65,23 +65,14 @@ return [
         ],
         'shortcuts' => [
             [
-                'name' => 'Login',
-                'url' => '/login',
+                'name' => 'Shortcut Link 1',
+                'description' => 'Shortcut Link 1 Description',
+                'url' => '/shortcutlink1',
                 'icons' => [
                     "src" => "assets/img/icon/96x96.png",
-                    "sizes" => "96x96",
                     "purpose" => "any"
                 ]
             ],
-            [
-                'name' => 'Home',
-                'url' => '/',
-                'icons' => [
-                    "src" => "assets/img/icon/96x96.png",
-                    "sizes" => "96x96",
-                    "purpose" => "any"
-                ]
-            ]
         ],
         'custom' => [
             'screenshots' => [
@@ -90,13 +81,12 @@ return [
                     'sizes' => '1280x800',
                     'type' => 'image/png',
                     'platform' => 'wide',
-                    'form_factor' => 'wide'
                 ],
                 [
                     'src' => 'assets/img/screenshots/screenshot 2.png',
                     'sizes' => '750x1334',
                     'type' => 'image/png',
-                    'platform' => 'narrow'
+                    'platform' => 'wide',
                 ]
             ],
         ]

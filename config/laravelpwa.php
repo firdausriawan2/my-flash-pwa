@@ -11,7 +11,7 @@ return [
         'dir' => 'auto',
         'lang' => 'id',
         'categories' => ['social'],
-        'display' => 'fullscreen',
+        'display' => 'standalone',
         'orientation'=> 'portrait',
         'background_color' => '#ffffff',
         'theme_color' => '#000000',

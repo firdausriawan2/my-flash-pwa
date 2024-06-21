@@ -77,7 +77,10 @@ return [
             'categories' => ['social'],
             'prefer_related_applications' => false,
             "display_override" => [
-                "window-controls-overlay"
+                "window-controls-overlay",
+                "standalone",
+                "fullscreen",
+                "minimal-ui",
             ],
             'screenshots' => [
                 [

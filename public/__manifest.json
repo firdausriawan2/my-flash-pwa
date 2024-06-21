@@ -1,12 +1,20 @@
 {
     "name": "MyFlash",
     "short_name": "MyFlash",
-    "start_url": "/",
-    "display": "standalone",
-    "scope": "/",
+    "description": "Your Internet Solution",
     "background_color": "#ffffff",
     "theme_color": "#000000",
+    "start_url": "/",
+    "dir": "auto",
+    "scope": "/",
+    "lang": "id",
     "orientation": "portrait",
+    "display": "fullscreen",
+    "categories": [
+        "entertainment",
+        "social"
+    ],
+    "generated": "true",
     "icons": [
         {
             "src": "assets/img/icon/72x72.png",
@@ -55,6 +63,44 @@
             "type": "image/png",
             "sizes": "512x512",
             "purpose": "any"
+        }
+    ],
+    "splash": [
+        {
+            "640x1136": "assets/img/splash/640x1136.png",
+            "750x1334": "assets/img/splash/750x1334.png",
+            "828x1792": "assets/img/splash/828x1804.png",
+            "1125x2436": "assets/img/splash/1125x2436.png",
+            "1242x2208": "assets/img/splash/1242x2208.png",
+            "1242x2688": "assets/img/splash/1242x2688.png",
+            "1536x2048": "assets/img/splash/1536x2048.png",
+            "1668x2224": "assets/img/splash/1668x2224.png",
+            "1668x2388": "assets/img/splash/1668x2388.png",
+            "2048x2732": "assets/img/splash/2048x2732.png"
+        }
+    ],
+    "shortcuts": [
+        {
+            "name": "Login",
+            "url": "/login",
+            "icons": [
+                {
+                    "src": "assets/img/icon/96x96.png",
+                    "sizes": "96x96",
+                    "purpose": "any"
+                }
+            ]
+        },
+        {
+            "name": "Home",
+            "url": "/",
+            "icons": [
+                {
+                    "src": "assets/img/icon/96x96.png",
+                    "sizes": "96x96",
+                    "purpose": "any"
+                }
+            ]
         }
     ],
     "screenshots": [

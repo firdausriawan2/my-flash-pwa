@@ -29,11 +29,13 @@
 
     <!-- App Header -->
     <div class="appHeader no-border transparent position-absolute">
-        <div class="left">
-            <a href="#" class="headerButton goBack">
-                <ion-icon name="chevron-back-outline"></ion-icon>
-            </a>
-        </div>
+        @if (Route::currentRouteName() != 'index')
+            <div class="left">
+                <a href="#" class="headerButton goBack">
+                    <ion-icon name="chevron-back-outline"></ion-icon>
+                </a>
+            </div>
+        @endif
         <div class="pageTitle"></div>
         @if (Route::currentRouteName() == 'register')
             <div class="right">

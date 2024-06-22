@@ -59,11 +59,13 @@ return [
         ],
         'shortcuts' => [
             [
-                'name' => 'Shortcut Link 1',
-                'description' => 'Shortcut Link 1 Description',
-                'url' => '/shortcutlink1',
+                'name' => 'Home',
+                'description' => 'Home Menu',
+                'url' => '/home',
                 'icons' => [
                     "src" => "/assets/img/icon/96x96.png",
+                    "sizes" => "96x96",
+                    "type" => "image/png",
                     "purpose" => "any"
                 ]
             ],

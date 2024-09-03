@@ -67,7 +67,8 @@
         <!-- * Button Bill -->
 
         <!-- Button Support -->
-        <a href="app-settings.html" class="item">
+        @php $isSupport = Route::currentRouteName() == 'support'; @endphp
+        <a href="{{ $isSupport ? '#' : route('support') }}" class="item {{ $isSupport ? 'active' : '' }}">
             <div class="col">
                 <ion-icon name="chatbubble-outline"></ion-icon>
             </div>

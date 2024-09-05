@@ -12,9 +12,9 @@
     <meta name="description" content="Finapp HTML Mobile Template">
     <meta name="keywords"
         content="bootstrap, wallet, banking, fintech mobile template, cordova, phonegap, mobile, html, responsive" />
-    <link rel="icon" type="image/png" href="assets/img/favicon.png" sizes="32x32">
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/icon/192x192.png">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" type="image/png" href="{{ asset('assets/img/favicon.png') }}" sizes="32x32">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('assets/img/icon/192x192.png') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
     @laravelPWA
     @if (isset($style))
         {{ $style }}
@@ -25,7 +25,7 @@
 
     <!-- loader -->
     <div id="loader">
-        <img src="assets/img/loading-icon.png" alt="icon" class="loading-icon">
+        <img src="{{ asset('assets/img/loading-icon.png') }}" alt="icon" class="loading-icon">
     </div>
     <!-- * loader -->
 
@@ -100,7 +100,7 @@
                 </div>
                 <div class="modal-body">
                     <div class="action-sheet-content text-center">
-                        <div class="mb-1"><img src="assets/img/icon/192x192.png" alt="image"
+                        <div class="mb-1"><img src="{{ asset('assets/img/icon/192x192.png') }}" alt="image"
                                 class="imaged w64 mb-2">
                         </div>
                         <div>
@@ -173,13 +173,13 @@
 
     <!-- ========= JS Files =========  -->
     <!-- Bootstrap -->
-    <script src="assets/js/lib/bootstrap.bundle.min.js"></script>
+    <script src="{{ asset('assets/js/lib/bootstrap.bundle.min.js') }}"></script>
     <!-- Ionicons -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <!-- Splide -->
-    <script src="assets/js/plugins/splide/splide.min.js"></script>
+    <script src="{{ asset('assets/js/plugins/splide/splide.min.js') }}"></script>
     <!-- Base Js File -->
-    <script src="assets/js/base.js"></script>
+    <script src="{{ asset('assets/js/base.js') }}"></script>
 
     <script>
         // Add to Home with 2 seconds delay.

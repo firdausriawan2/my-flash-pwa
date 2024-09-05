@@ -14,6 +14,23 @@
             </a>
         </div>
     </div>
+    <ul class="listview image-listview text inset mt-3">
+        <li>
+            <a href="{{ route('device.index') }}" class="item">
+                <div class="icon-box bg-primary">
+                    <ion-icon name="home-outline"></ion-icon>
+                </div>
+                <div class="in">
+                    <div>
+                        <div class="text-muted">
+                            Profile Aktif
+                        </div>
+                        <strong>2020791423</strong>
+                    </div>
+                </div>
+            </a>
+        </li>
+    </ul>
 
     <div class="listview-title mt-1">Theme</div>
     <ul class="listview image-listview text inset no-line">
@@ -32,7 +49,7 @@
         </li>
     </ul>
 
-    {{-- <div class="listview-title mt-1">Notifications</div>
+    <div class="listview-title mt-1">Notifications</div>
     <ul class="listview image-listview text inset">
         <li>
             <div class="item">
@@ -40,11 +57,11 @@
                     <div>
                         Payment Alert
                         <div class="text-muted">
-                            Send notification when new payment received
+                            Send notification when new bill has appeared
                         </div>
                     </div>
                     <div class="form-check form-switch  ms-2">
-                        <input class="form-check-input" type="checkbox" id="SwitchCheckDefault1">
+                        <input class="form-check-input" type="checkbox" id="SwitchCheckDefault1" checked>
                         <label class="form-check-label" for="SwitchCheckDefault1"></label>
                     </div>
                 </div>
@@ -58,7 +75,7 @@
                 </div>
             </a>
         </li>
-    </ul> --}}
+    </ul>
     @if ($errors->any())
         <div class="alert alert-danger">
             <ul>
@@ -105,7 +122,7 @@
             </a>
         </li>
         <!-- 2FA Verification -->
-        {{-- <li>
+        <li>
             <div class="item">
                 <div class="in">
                     <div>
@@ -117,7 +134,7 @@
                     </div>
                 </div>
             </div>
-        </li> --}}
+        </li>
         <!-- * 2FA Verification -->
         <li>
             <a href="{{ route('logout') }}" class="item"

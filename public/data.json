@@ -1,0 +1,24 @@
+{
+    "devices": [
+        {
+            "id": 1,
+            "device_name": "N/A",
+            "port_id": "SSID 1",
+            "mac_address": "3A:4B:5C:6D:7E:8F",
+            "vendor_name": "-",
+            "status": "Active",
+            "ip_address": "192.168.1.2",
+            "rssi": "Sinyal kuat"
+        },
+        {
+            "id": 2,
+            "device_name": "N/A",
+            "port_id": "SSID 2",
+            "mac_address": "9B:8C:7D:6E:5F:4A",
+            "vendor_name": "-",
+            "status": "Active",
+            "ip_address": "192.168.1.5",
+            "rssi": "Sinyal kuat"
+        }
+    ]
+}

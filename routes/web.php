@@ -16,6 +16,11 @@ Route::middleware('auth')->group(function () {
     Route::get('/bill', [BillController::class, 'index'])->name('bill');
     Route::get('/support', [SupportController::class, 'index'])->name('support');
     Route::get('/account', [AccountController::class, 'index'])->name('account');
+
+    Route::controller(App\Http\Controllers\DeviceController::class)->group(function () {
+        Route::get('/device', 'index')->name('device.index');
+        Route::get('/device/detail', 'detail')->name('device.detail');
+    });
 });
 
 Route::get('/dashboard', function () {

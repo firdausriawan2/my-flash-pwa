@@ -11,7 +11,7 @@
                             <div class="input-group">
                                 <input id="password" name="password" type="password"
                                     class="form-control" required
-                                    autofocus>
+                                    autofocus minlength="8">
                             </div>
                         </div>
                         <div class="form-group basic">

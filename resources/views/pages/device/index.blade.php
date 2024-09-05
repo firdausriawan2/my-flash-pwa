@@ -12,7 +12,7 @@
                             <ion-icon name="wifi" class="image"></ion-icon>
                             <div class="in">
                                 <div>Wifi</div>
-                                <span class="text-muted">4</span>
+                                <span class="text-muted">2</span>
                             </div>
                         </div>
                     </li>

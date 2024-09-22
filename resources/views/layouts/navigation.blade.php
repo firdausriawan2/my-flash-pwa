@@ -9,7 +9,7 @@
         {{-- <h2 class="logo text-light py-1">MyFlash</h2> --}}
     </div>
     <div class="right">
-        <a href="app-notifications.html" class="headerButton">
+        <a href="#" class="headerButton">
             <ion-icon class="icon" name="notifications-outline"></ion-icon>
             <span class="badge badge-danger">0</span>
         </a>

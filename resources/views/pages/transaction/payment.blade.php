@@ -32,7 +32,7 @@
             <h1>Rp{{ number_format($totalAmount * 1.11, 0, ',', '.') }}</h1>
         </div>
         <div class="payment-button mt-3">
-            <button class="btn btn-danger btn-block">BAYAR</button>
+            <a href="{{ route('bill.payment.virtual-account') }}" class="btn btn-danger btn-block">BAYAR</a>
         </div>
     </div>
 

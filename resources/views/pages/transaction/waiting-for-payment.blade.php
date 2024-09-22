@@ -7,12 +7,12 @@
             <ul class="listview flush transparent simple-listview mt-3">
                 <li>
                     <h2>Bayar sebelum</h2>
-                    <span class="badge badge-danger"><ion-icon name="time-outline"></ion-icon> 23:55:20</span>
+                    <span class="badge badge-danger"><ion-icon name="time-outline"></ion-icon> {{ $unpaidBills->max('due_date') }}</span>
                 </li>
                 <li>
                     <span>
                         <p>Nomor Virtual Account</p>
-                        <h3>152012024647814 <a><ion-icon name="copy-outline"></ion-icon></a></h3>
+                        <h3>15201{{ $customer['flashnetid'] }} <a><ion-icon name="copy-outline"></ion-icon></a></h3>
                     </span>
                     <img src="https://developers.bri.co.id/sites/default/files/inline-images/BRIVA-BRI.jpg" alt="Briva"
                         class="image-block imaged w48" style="margin-right: 10px;">
@@ -20,7 +20,7 @@
                 <li>
                     <span>
                         <p>Total Tagihan</p>
-                        <h3>Rp421.800 <ion-icon name="copy-outline"></ion-icon></h3>
+                        <h3>Rp{{ number_format($totalAmount * 1.11, 0, ',', '.') }} <ion-icon name="copy-outline"></ion-icon></h3>
                     </span>
                     <a href="" class="btn btn-text-danger">Lihat Detail</a>
                 </li>

@@ -25,7 +25,7 @@
                         <div class="text-muted">
                             Profile Aktif
                         </div>
-                        <strong>2020791423</strong>
+                        <strong>{{ Auth::user()->customer->first()->CustomerID }}</strong>
                     </div>
                 </div>
             </a>

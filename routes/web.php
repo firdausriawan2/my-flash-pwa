@@ -13,6 +13,10 @@ Route::get('/', function () {
 
 Route::middleware('auth')->group(function () {
     Route::get('/home', [HomeController::class, 'index'])->name('home');
+    Route::get('/bill/detail', [BillController::class, 'detail'])->name('bill.detail');
+    Route::get('/bill/payment', [BillController::class, 'payment'])->name('bill.payment');
+
+
     Route::get('/bill', [BillController::class, 'index'])->name('bill');
     Route::get('/support', [SupportController::class, 'index'])->name('support');
     Route::get('/account', [AccountController::class, 'index'])->name('account');

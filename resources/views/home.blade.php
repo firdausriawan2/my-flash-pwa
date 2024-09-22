@@ -5,13 +5,19 @@
             <!-- Balance -->
             <div class="balance">
                 <div class="left">
-                    <span class="title">{{ Auth::user()->name }}</span>
-                    <h2 class="total">2020791423</h2>
+                    <span class="title">{{ $customer['name'] }}</span>
+                    <h2 class="total">{{ $customer['flashnetid'] }}</h2>
                 </div>
                 <div class="right">
-                    <a href="#" class="button">
-                        Lunas
-                    </a>
+                    @if ($totalUnpaid > 0)
+                        <a href="{{ route('bill.detail') }}" class="button btn-text-danger text-center">
+                            Belum Lunas
+                        </a>
+                    @else
+                        <a href="#" class="button">
+                            Lunas
+                        </a>
+                    @endif
                 </div>
             </div>
             <!-- * Balance -->

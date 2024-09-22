@@ -39,7 +39,7 @@
 
 
     <!-- App Capsule -->
-    <div id="appCapsule">
+    <div id="appCapsule" >
         {{ $slot }}
     </div>
     <!-- * App Capsule -->

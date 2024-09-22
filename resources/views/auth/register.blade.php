@@ -42,6 +42,22 @@
                             </i>
                         </div>
                     </div>
+
+                    <div class="form-group basic">
+                        <div class="input-wrapper">
+                            <label class="label" for="flashnet_id">Flashnet ID</label>
+                            <input type="text" inputmode="numeric" id="flashnet_id"
+                                class="form-control @error('flashnet_id') is-invalid @enderror" name="flashnet_id"
+                                value="{{ old('flashnet_id') }}" placeholder="Your Flashnet ID" required
+                                autocomplete="flashnet_id">
+                            @error('flashnet_id')
+                                <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $message }}</strong>
+                                </span>
+                            @enderror
+                        </div>
+                    </div>
+
                     <div class="form-group basic">
                         <div class="input-wrapper">
                             <label class="label" for="password1">Password</label>

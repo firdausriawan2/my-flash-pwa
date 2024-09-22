@@ -24,7 +24,6 @@ class HomeController extends Controller
         });
 
         $totalUnpaid = array_sum(array_column($unpaidBills, 'amount'));
-        // dd($totalUnpaid);
 
         return view('home', ['customer' => $customerData, 'totalUnpaid' => $totalUnpaid]);
     }

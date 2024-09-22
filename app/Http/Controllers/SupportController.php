@@ -10,4 +10,9 @@ class SupportController extends Controller
     {
         return view('support');
     }
+
+    public function contact()
+    {
+        return view('pages.support.contact');
+    }
 }

@@ -19,7 +19,12 @@ Route::middleware('auth')->group(function () {
 
 
     Route::get('/bill', [BillController::class, 'index'])->name('bill');
-    Route::get('/support', [SupportController::class, 'index'])->name('support');
+
+    Route::controller(SupportController::class)->group(function () {
+        Route::get('/support', 'index')->name('support');
+        Route::get('/support/contact', 'contact')->name('support.contact');
+    });
+
     Route::get('/account', [AccountController::class, 'index'])->name('account');
 
     Route::controller(App\Http\Controllers\DeviceController::class)->group(function () {

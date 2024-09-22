@@ -61,7 +61,7 @@
             <a href="{{ route('bill.payment') }}" class="btn btn-danger btn-block">BAYAR</a>
         </div>
         <div class="contact-us mt-2 text-center">
-            <a href="#" class="text-danger">HUBUNGI KAMI</a>
+            <a href="{{ route('support') }}" class="text-danger">HUBUNGI KAMI</a>
         </div>
     </div>
 

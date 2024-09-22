@@ -137,7 +137,7 @@
                             <p class="card-text">
                                 Jangan sungkan untuk menghubungi kami! Tim kami siap membantu Anda.
                             </p>
-                            <a href="#" class="btn btn-dark">
+                            <a href="{{ route('support.contact') }}" class="btn btn-dark">
                                 <ion-icon name="mail-open-outline"></ion-icon> Pengaduan Layanan
                             </a>
                         </div>

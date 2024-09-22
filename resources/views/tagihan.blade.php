@@ -13,7 +13,7 @@
             </div>
             <div class="transactions">
                 <!-- item -->
-                <a href="{{ route('bill.detail', $bill['id']) }}" class="item">
+                <a href="#" class="item">
                     <div class="detail">
                         <img src="assets/img/sample/brand/1.jpg" alt="img" class="image-block imaged w48">
                         <div>

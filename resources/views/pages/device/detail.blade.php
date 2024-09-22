@@ -10,12 +10,12 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" href="#card" role="tab">
+                <a class="nav-link" data-bs-toggle="tab" href="#wired" role="tab">
                     Wired (0)
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" href="#card" role="tab">
+                <a class="nav-link" data-bs-toggle="tab" href="#block" role="tab">
                     Block (0)
                 </a>
             </li>
@@ -62,34 +62,15 @@
                     @endforeach
                 </div>
             </div>
-            <div class="tab-pane fade" id="card" role="tabpanel">
+            <div class="tab-pane fade" id="wired" role="tabpanel">
                 <div class="section mt-3 mb-3">
-                    <div class="section-heading padding ">
-                        <h6 class="title" style="font-size: 16px;">Tiket aktif</h6>
-                        <br>
-                    </div>
-                    <div class="text-center">Tidak ada tiket ditemukan</div>
+                    <div class="text-center">Tidak ada device terhubung</div>
                 </div>
+            </div>
+            <div class="tab-pane fade" id="block" role="tabpanel">
                 <div class="section mt-3 mb-3">
-                    <div class="section-heading padding ">
-                        <h6 class="title" style="font-size: 16px;">Tiket terselesaikan</h6>
-                    </div>
+                    <div class="text-center">Tidak ada device diblock</div>
                 </div>
-                <ul class="listview image-listview inset">
-                    <li>
-                        <a href="#" class="item">
-                            <img src="assets/img/sample/avatar/avatar1.jpg" alt="image" class="image">
-                            <div class="in">
-                                <div>
-                                    <header><strong>Tiket #000001</strong></header>
-                                    <span class="text-small">Conversation with M.FIRDAUS RIAWAN</span>
-                                    <footer>20 hari yang lalu</footer>
-                                </div>
-                            </div>
-                        </a>
-                    </li>
-                </ul>
-
             </div>
         </div>
     </div>

@@ -101,7 +101,14 @@ return [
             'launch_handler' => [
                 'client_mode' => 'navigate-existing'
             ],
-            'handle_links' => 'preferred'
+            'handle_links' => 'preferred',
+            "related_applications" => [
+                [
+                  "platform" => "play",
+                  "url" => "https://play.google.com/store/apps/details?id=com.telkomsel.telkomselcm",
+                  "id" => "com.telkomsel.telkomselcm"
+                ]
+            ]
         ]
     ]
 ];

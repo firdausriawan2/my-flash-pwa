@@ -100,7 +100,8 @@ return [
             ],
             'launch_handler' => [
                 'client_mode' => 'navigate-existing'
-            ]
+            ],
+            'handle_links' => 'preferred'
         ]
     ]
 ];

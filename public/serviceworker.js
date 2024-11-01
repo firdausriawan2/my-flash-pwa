@@ -52,3 +52,32 @@ self.addEventListener("fetch", event => {
             })
     )
 });
+
+// Event listener untuk menangani push notifications
+self.addEventListener('push', event => {
+    let data = {};
+    if (event.data) {
+        data = event.data.json();
+    }
+
+    const options = {
+        body: data.body || 'You have a new notification!',
+        icon: '/assets/img/icon/192x192.png', // Path ke icon notifikasi
+        badge: '/assets/img/icon/96x96.png', // Path ke badge notifikasi
+        data: {
+            url: data.url || '/'
+        }
+    };
+
+    event.waitUntil(
+        self.registration.showNotification(data.title || 'Notification', options)
+    );
+});
+
+// Event listener untuk menangani klik pada notifikasi
+self.addEventListener('notificationclick', event => {
+    event.notification.close();
+    event.waitUntil(
+        clients.openWindow(event.notification.data.url)
+    );
+});

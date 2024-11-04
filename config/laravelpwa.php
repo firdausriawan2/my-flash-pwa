@@ -73,7 +73,7 @@ return [
         'custom' => [
             'id' => '/',
             'description' => 'Your Internet Solution',
-            'scope' => env('APP_URL', "https://app.flash.net.id/"),
+            'start_url' => env('APP_URL', "https://app.flash.net.id/") . '/',
             'dir' => 'ltr',
             'lang' => 'id',
             'categories' => ['social'],

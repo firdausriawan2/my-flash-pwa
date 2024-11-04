@@ -1,14 +1,11 @@
 [
     {
-        "relation": [
-            "delegate_permission/common.handle_all_urls"
-        ],
-        "target": {
-            "namespace": "android_app",
-            "package_name": "id.net.flash.app.twa",
-            "sha256_cert_fingerprints": [
-                "F2:69:B8:8E:C4:CA:87:FE:89:D2:6D:C9:1B:A7:66:3D:51:D5:1B:DD:60:9F:B8:B6:F6:F6:D0:8A:21:38:2B:3F"
-            ]
-        }
+      "relation": ["delegate_permission/common.handle_all_urls"],
+      "target": {
+        "namespace": "android_app",
+        "package_name": "id.net.flash.app.twa",
+        "sha256_cert_fingerprints":
+          ["12:CC:D4:4F:49:DB:9C:E0:00:BA:70:BA:97:05:38:9C:02:C7:05:DF:B2:0B:63:2D:37:84:A5:53:82:24:87:7B"]
+      }
     }
-]
+  ]

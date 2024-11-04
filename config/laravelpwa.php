@@ -5,7 +5,7 @@ return [
     'manifest' => [
         'name' => env('APP_NAME', 'MyFlash'),
         'short_name' => 'MyFlash',
-        'start_url' => env('APP_URL', "https://app.flash.net.id/"),
+        'start_url' => env('APP_URL', "https://app.flash.net.id/") . '/',
         'background_color' => '#ffffff',
         'theme_color' => '#000000',
         'display' => 'standalone',

@@ -40,17 +40,22 @@ self.addEventListener('activate', event => {
     );
 });
 
-// Serve from Cache
+// Serve from Cache with Network Fallback
 self.addEventListener("fetch", event => {
     event.respondWith(
         caches.match(event.request)
             .then(response => {
-                return response || fetch(event.request);
+                return response || fetch(event.request).then(fetchResponse => {
+                    return caches.open(staticCacheName).then(cache => {
+                        cache.put(event.request, fetchResponse.clone());
+                        return fetchResponse;
+                    });
+                });
             })
             .catch(() => {
-                return caches.match('offline');
+                return caches.match('/offline');
             })
-    )
+    );
 });
 
 // Event listener untuk menangani push notifications

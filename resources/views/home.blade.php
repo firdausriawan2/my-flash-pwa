@@ -210,7 +210,7 @@
                             </div>
                             <div class="price">IPTV</div>
                             <p>Prime Monthly Subscription</p>
-                            <a href="#" class="btn btn-primary btn-block btn-sm">PAY NOW</a>
+                            <a href="#" class="btn btn-primary btn-block btn-sm">Detail</a>
                         </div>
                     </li>
 
@@ -222,7 +222,7 @@
                             </div>
                             <div class="price">CCTV</div>
                             <p>Music Monthly Subscription</p>
-                            <a href="#" class="btn btn-primary btn-block btn-sm">PAY NOW</a>
+                            <a href="#" class="btn btn-primary btn-block btn-sm">Detail</a>
                         </div>
                     </li>
 
@@ -235,7 +235,7 @@
                             <div class="price">STORAGE</div>
                             <p>Credit Card Statement
                             </p>
-                            <a href="#" class="btn btn-primary btn-block btn-sm">PAY NOW</a>
+                            <a href="#" class="btn btn-primary btn-block btn-sm">Detail</a>
                         </div>
                     </li>
 

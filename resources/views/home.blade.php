@@ -118,12 +118,17 @@
 
                     <li class="splide__slide">
                         <!-- card block -->
-                        <img class="img-fluid rounded" src="assets/img/banner.png" alt="">
+                        <img class="img-fluid rounded" src="assets/img/1.jpeg" alt="">
                         <!-- * card block -->
                     </li>
                     <li class="splide__slide">
                         <!-- card block -->
-                        <img class="img-fluid rounded" src="assets/img/banner2.png" alt="">
+                        <img class="img-fluid rounded" src="assets/img/2.jpeg" alt="">
+                        <!-- * card block -->
+                    </li>
+                     <li class="splide__slide">
+                        <!-- card block -->
+                        <img class="img-fluid rounded" src="assets/img/3.jpeg" alt="">
                         <!-- * card block -->
                     </li>
                 </ul>
@@ -147,44 +152,33 @@
                 <ul class="splide__list">
 
                     <li class="splide__slide">
-                        <a href="app-blog-post.html">
+                        <a href="{{ route('news', 1) }}">
                             <div class="blog-card">
-                                <img src="assets/img/sample/photo/1.jpg" alt="image" class="imaged w-100">
+                                <img src="assets/img/news/1.jpeg" alt="image" class="imaged w-100">
                                 <div class="text">
-                                    <h4 class="title">What will be the value of bitcoin in the next...</h4>
+                                    <h4 class="title">Pemko Padang Panjang Tanda...</h4>
                                 </div>
                             </div>
                         </a>
                     </li>
 
                     <li class="splide__slide">
-                        <a href="app-blog-post.html">
+                        <a href="{{ route('news', 2) }}">
                             <div class="blog-card">
-                                <img src="assets/img/sample/photo/2.jpg" alt="image" class="imaged w-100">
+                                <img src="assets/img/news/2.jpeg" alt="image" class="imaged w-100">
                                 <div class="text">
-                                    <h4 class="title">Rules you need to know in business</h4>
+                                    <h4 class="title">Rayakan HJK ke-234, Pemko akan Gelar Padang Panjang Fest</h4>
                                 </div>
                             </div>
                         </a>
                     </li>
 
                     <li class="splide__slide">
-                        <a href="app-blog-post.html">
+                        <a href="{{ route('news', 3) }}">
                             <div class="blog-card">
-                                <img src="assets/img/sample/photo/3.jpg" alt="image" class="imaged w-100">
+                                <img src="assets/img/news/3" alt="image" class="imaged w-100">
                                 <div class="text">
-                                    <h4 class="title">10 easy ways to save your money</h4>
-                                </div>
-                            </div>
-                        </a>
-                    </li>
-
-                    <li class="splide__slide">
-                        <a href="app-blog-post.html">
-                            <div class="blog-card">
-                                <img src="assets/img/sample/photo/4.jpg" alt="image" class="imaged w-100">
-                                <div class="text">
-                                    <h4 class="title">Follow the financial agenda with...</h4>
+                                    <h4 class="title">Padang Panjang Raih Piala Adipura ke-16, Pj Wali Kota Serahkan Bonus untuk 334 Petugas Kebersihan</h4>
                                 </div>
                             </div>
                         </a>
@@ -214,7 +208,7 @@
                                 <img src="assets/img/sample/brand/1.jpg" alt="img"
                                     class="image-block imaged w48">
                             </div>
-                            <div class="price">$ 14</div>
+                            <div class="price">IPTV</div>
                             <p>Prime Monthly Subscription</p>
                             <a href="#" class="btn btn-primary btn-block btn-sm">PAY NOW</a>
                         </div>
@@ -226,7 +220,7 @@
                                 <img src="assets/img/sample/brand/2.jpg" alt="img"
                                     class="image-block imaged w48">
                             </div>
-                            <div class="price">$ 9</div>
+                            <div class="price">CCTV</div>
                             <p>Music Monthly Subscription</p>
                             <a href="#" class="btn btn-primary btn-block btn-sm">PAY NOW</a>
                         </div>
@@ -235,11 +229,10 @@
                     <li class="splide__slide">
                         <div class="bill-box">
                             <div class="img-wrapper">
-                                <div class="iconbox">
-                                    <ion-icon name="card-outline"></ion-icon>
-                                </div>
+                                <img src="assets/img/sample/brand/2.jpg" alt="img"
+                                    class="image-block imaged w48">
                             </div>
-                            <div class="price">$ 962</div>
+                            <div class="price">STORAGE</div>
                             <p>Credit Card Statement
                             </p>
                             <a href="#" class="btn btn-primary btn-block btn-sm">PAY NOW</a>

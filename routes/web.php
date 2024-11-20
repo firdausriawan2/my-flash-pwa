@@ -31,6 +31,10 @@ Route::middleware('auth')->group(function () {
         Route::get('/device', 'index')->name('device.index');
         Route::get('/device/detail', 'detail')->name('device.detail');
     });
+
+    Route::controller(App\Http\Controllers\NewsController::class)->group(function () {
+        Route::get('/news/{id}', 'news')->name('news');
+    });
 });
 
 Route::get('/dashboard', function () {
